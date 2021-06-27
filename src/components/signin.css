@@ -1,0 +1,28 @@
+.signin-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+}
+.welcome-msg {
+  font-size: 20px;
+}
+.signin-inputs {
+  width: 100%;
+}
+.signin-btn {
+  width: 80%;
+}
+
+.login-links {
+  cursor: pointer;
+}
+.bold-text {
+  font-weight: 700;
+}
+.login-links:hover {
+  text-decoration: underline;
+}
