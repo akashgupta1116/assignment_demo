@@ -1,3 +1,36 @@
 .App {
   background: #48335e;
 }
+
+.headline {
+  font-size: 20px;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.links {
+  cursor: pointer;
+}
+
+.links:hover {
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.signin-inputs {
+  width: 100%;
+}
+.signin-btn {
+  width: 80%;
+}
