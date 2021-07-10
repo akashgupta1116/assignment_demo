@@ -3,14 +3,8 @@ import "./signin.css";
 import { StyledButton, StyledInput } from "./CustomStyledComponents";
 
 const SignIn = () => {
-  const [formState, setFormState] = useState({
-    userName: "",
-    password: ""
-  });
-
-  const handleFormState = (e) => {
-    setFormState({ ...setFormState, [e.target.name]: e.target.value });
-  };
+  const [userName, setUserName] = useState("");
+  const [password, setPassword] = useState("");
 
   return (
     <div className="signin-container">
@@ -18,18 +12,18 @@ const SignIn = () => {
       <StyledInput
         type="text"
         name="userName"
-        value={formState.userName}
+        value={userName}
         className="signin-inputs"
         placeholder="USERNAME"
-        onChange={handleFormState}
+        onChange={(e) => setUserName(e.target.value)}
       />
       <StyledInput
         type="password"
         name="password"
-        value={formState.password}
+        value={password}
         className="signin-inputs"
         placeholder="PASSWORD"
-        onChange={handleFormState}
+        onChange={(e) => setPassword(e.target.value)}
       />
       <StyledButton className="signin-btn">Sign In</StyledButton>
       <a className="login-links">Forgot your details?</a>
